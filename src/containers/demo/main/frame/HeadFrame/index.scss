@@ -1,0 +1,43 @@
+@import '../../../../../assets/style/public/index.scss';
+.header-frame{
+  @extend %fixed00;
+  width:100%;
+  z-index: 99;
+  background-color: $c-hd-bg;
+  height:$h-hd-main;
+  line-height: $h-hd-main;
+  .logo{
+    height:100%;
+    width:$w-hd-logo;
+    position: absolute;
+    margin-right: 20px;
+    top:0;
+    left:63px;
+    color:$c-hd-logo;
+    font-weight: $fw-hd-logo;
+    font-size:$fz-hd-logo;
+    cursor: pointer;
+    img{
+      width:$w-hd-img;
+      height:$h-hd-img;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right:20px;
+    }
+  }
+  .exit{
+    .el-button{
+      vertical-align: middle;
+      display: inline-block;
+      height:$h-hd-exit;
+      line-height: $h-hd-exit;
+      width:$w-hd-exit;
+      padding:0;
+      background-color: $c-hd-bg;
+      color:$c-hd-color;
+      &:hover{
+        color:$c-hd-exitH;
+      }
+    }
+  }
+}

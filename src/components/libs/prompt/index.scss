@@ -1,0 +1,66 @@
+.prompt-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 990;
+    .baseLine {
+        height: 100%;
+        width: 1px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .prompt-box-container {
+        vertical-align: middle;
+        display: inline-block;
+        background-color: #fff;
+        z-index: 998;
+        position: relative;
+        border-radius: 5px;
+        h2 {
+            height: 50px;
+            line-height: 50px;
+            text-indent: 15px;
+            vertical-align: middle;
+            span {
+                font-size: 20px;
+                color: #333;
+                cursor: pointer;
+            }
+            .l {
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+            }
+            .r {
+                margin: 17px 17px 0 0;
+            }
+        }
+    }
+    .prompt-box-container-show {
+        animation: myframes 0.3s;
+    }
+    .layer {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        z-index: 98;
+        opacity: 0.4;
+    }
+}
+
+@keyframes myframes {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

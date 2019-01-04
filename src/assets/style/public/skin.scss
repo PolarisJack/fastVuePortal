@@ -1,0 +1,53 @@
+
+/**
+ * Created by Jack on 2018/7/16.
+ * #皮肤样式
+ */
+
+/*--
+  c : 颜色
+  h : 高度
+  w : 宽度
+  p : 位置
+  f : 字体
+--*/
+
+//背景颜色
+
+
+
+//头部颜色
+$c-hd-bg    : #252D3F;//头部背景
+$c-hd-color : #bec2cc;//头部字体颜色
+$h-hd-main  : 70px!important;//头部高度
+$w-hd-logo  : 280px;//logo容器宽度
+$c-hd-logo  : #fff;//logo字体颜色
+$fz-hd-logo : 18px;//logo字号大小
+$fw-hd-logo : 100;//logo字体
+$w-hd-img   : 31px;//logo图片宽度
+$h-hd-img   : 44px;//logo图片高度
+$w-hd-exit  : 70px;//退出按钮宽度
+$h-hd-exit  : 30px;//退出按钮高度
+$c-hd-exitH : #fff;//退出按钮高亮颜色
+
+//导航条
+
+$p-bc-top     : 70px!important;//定位顶部位置
+$p-bc-padding : 0 0 0 220px;//内边距
+$h-bc-main    : 44px;//高度
+$c-bc-bg      : #fff;//背景色
+$c-bc-border  : #ccc;//边框颜色
+
+//侧边导航
+
+$c-sb-bg      : #283149!important;//侧边主体导航背景
+$w-sb-main    : 200px!important;//主体宽度
+$p-sb-cont    : 100px 0 0 0;//侧边导航主体边距
+$c-sb-cont    : #283149!important;//侧边导航容器背景
+$c-sb-itemH   : #252D3F!important;//侧边导航元素 hover背景颜色
+$c-sb-itemC   : #409EFF;//侧边导航元素 字体颜色
+$c-sb-itemCH  : #409EFF;//侧边导航元素 字体hover颜色
+
+//主体内容
+
+$p-mn-main   : 114px 0 0 200px;

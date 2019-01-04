@@ -1,0 +1,60 @@
+/**
+ * Created by Jack on 2018/3/28.
+ *
+ */
+
+ %ellipsis{//省略号
+    text-overflow: ellipsis;;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+ %middle{//居中
+    position: absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+ }
+ %fixed00 {
+   position:fixed;
+   top:0;
+   left:0;
+ }
+
+ @mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+ }
+
+ @mixin cigone($line){//多行文本隐藏
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display:-webkit-box;
+   -webkit-box-orient:vertical;
+   -webkit-line-clamp:line;
+ }
+@mixin triangle($dt,$W,$H,$color){//三角形 方向、宽、高、颜色
+	width: 0;
+	height: 0;
+	@if ($dt=="left") or ($dt=="right"){
+		border-top: $W/2 solid transparent;
+		border-bottom: $W/2 solid transparent;
+		@if ($dt=="left"){
+			border-right:$H solid $color;
+		}@else {
+			border-left:$H solid $color;
+		}
+	}@else if ($dt=="up") or ($dt=="down"){
+		border-left: $W/2 solid transparent;
+		border-right: $W/2 solid transparent;
+		@if ($dt=="up"){
+			border-bottom:$H solid $color;
+		}@else {
+			border-top:$H solid $color;
+		}
+	}
+}

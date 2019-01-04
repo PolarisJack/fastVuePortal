@@ -1,0 +1,34 @@
+@import '../../../assets/style/public/index.scss';
+.side-bar {
+    @extend %fixed00;
+    z-index: 97;
+    width: $w-sb-main;
+    height: 100%;
+    background-color: $c-sb-bg;
+    .el-menu-container {
+        padding: $p-sb-cont;
+        background-color: $c-sb-cont;
+        .el-menu-item {
+            background-color: $c-sb-bg;
+            color: $c-sb-itemC;
+            &:hover {
+                background-color: $c-sb-itemH;
+                color: $c-sb-itemCH;
+            }
+        }
+        .el-submenu {
+            .el-submenu__title {
+                background-color: $c-sb-bg;
+                color: $c-sb-itemC;
+                &:hover {
+                    background-color: $c-sb-itemH;
+                    color: $c-sb-itemCH;
+                }
+            }
+        }
+        .is-active {
+            background-color: $c-sb-itemH;
+            color: $c-sb-itemCH;
+        }
+    }
+}
